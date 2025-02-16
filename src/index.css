@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Plugins */
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+/* Class based dark mode */
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-1: #01080E;
+  --color-primary-2: #011627;
+  --color-primary-3: #011221;
+
+  --color-secondary-1: #607B96;
+  --color-secondary-2: #3C9D93;
+  --color-secondary-3: #4D5BCE;
+  --color-secondary-4: #FFFFFF;
+
+  --color-accent-1: #FEA55F;
+  --color-accent-2: #43D9AD;
+  --color-accent-3: #E99287;
+  --color-accent-4: #C98BDF;
+
+  --color-lines: #1E2D3D;
+
+  --color-gradient-1: #4D5BCE;
+  --color-gradient-2: #43D9AD;
+}
