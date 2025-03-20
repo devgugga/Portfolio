@@ -1,0 +1,166 @@
+{
+    "id": "drakkenheim-core",
+    "version": "1.5.1",
+    "protected": true,
+    "title": "Dungeons of Drakkenheim",
+    "description": "A 5e adventure where malevolent monsters and rival factions clash in a dark city devastated by a mysterious meteor shower!",
+    "authors": [
+      {
+        "name": "Ghostfire Gaming",
+        "url": "https://ghostfiregaming.com/dungeons-of-drakkenheim/"
+      }
+    ],
+    "url": "https://ghostfiregaming.com/dungeons-of-drakkenheim/",
+    "bugs": "https://support.metamorphic-digital.com",
+    "manifest": "https://r2.foundryvtt.com/packages-public/drakkenheim-core/module.json",
+    "changelog": "https://support.metamorphic-digital.com/changelog/drakkenheim-core",
+    "media": [
+      {
+        "type": "cover",
+        "url": ""
+      },
+      {
+        "type": "icon",
+        "url": ""
+      }
+    ],
+    "compatibility": {
+      "minimum": "12",
+      "verified": "12",
+      "maximum": "12"
+    },
+    "relationships": {
+      "recommends": [
+        {
+          "id": "dice-so-nice",
+          "type": "module",
+          "manifest": "https://gitlab.com/riccisi/foundryvtt-dice-so-nice/-/raw/master/module/module.json",
+          "reason": "Dungeons of Drakkenheim comes with a special dice skin for Dice so Nice."
+        }
+      ],
+      "systems": [
+        {
+          "id": "dnd5e",
+          "type": "system",
+          "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+          "compatibility": {
+            "minimum": "4.3.6"
+          }
+        }
+      ]
+    },
+    "languages": [
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json"
+      }
+    ],
+    "esmodules": [
+      "index.js"
+    ],
+    "styles": [
+      "style.css"
+    ],
+    "packs": [
+      {
+        "label": "Adventure",
+        "type": "Adventure",
+        "name": "adventures",
+        "path": "packs/adventures",
+        "system": "dnd5e",
+        "package": "adventures",
+        "visible": true,
+        "banner": "modules/drakkenheim-core/assets/art/0001_CINE_Drakenheim_City_CMYK_CUT.webp"
+      },
+      {
+        "label": "Items",
+        "type": "Item",
+        "name": "items",
+        "path": "packs/items",
+        "system": "dnd5e",
+        "package": "drakkenheim-core",
+        "visible": true,
+        "banner": "modules/drakkenheim-core/assets/art/0004_CINE_Inside_the_crater_CMYK_CUT.webp"
+      },
+      {
+        "label": "Spells",
+        "type": "Item",
+        "name": "spells",
+        "path": "packs/spells",
+        "system": "dnd5e",
+        "package": "drakkenheim-core",
+        "visible": true,
+        "banner": "modules/drakkenheim-core/assets/art/0004_CINE_Inside_the_crater_CMYK_CUT.webp"
+      },
+      {
+        "label": "Roll Tables",
+        "type": "RollTable",
+        "name": "tables",
+        "path": "packs/tables",
+        "system": "dnd5e",
+        "package": "drakkenheim-core",
+        "visible": true,
+        "banner": "modules/drakkenheim-core/assets/art/0004_CINE_Inside_the_crater_CMYK_CUT.webp"
+      },
+      {
+        "label": "Journals",
+        "type": "JournalEntry",
+        "name": "journals",
+        "path": "packs/journals",
+        "system": "dnd5e",
+        "package": "drakkenheim-core",
+        "visible": true
+      }
+    ],
+    "packFolders": [
+      {
+        "name": "Drakkenheim",
+        "sorting": "m",
+        "color": "#311432",
+        "packs": [],
+        "folders": [
+          {
+            "name": "Dungeons of Drakkenheim",
+            "sorting": "m",
+            "color": "#311432",
+            "packs": [
+              "adventures",
+              "items",
+              "spells",
+              "tables",
+              "journals"
+            ]
+          }
+        ]
+      }
+    ],
+    "flags": {
+      "drakkenheim-core": {
+        "migration": {
+          "version": "1.5.1"
+        },
+        "adventureImporter": {
+          "Compendium.drakkenheim-core.adventures.Adventure.drakkcoradv00001": {
+            "initialSceneId": "DhuFVrg8Z0T8KsaW",
+            "initialJournalEntryId": "drakkenc01chapte",
+            "initialJournalPageId": "01chapter1intr00",
+            "additionalItems": {},
+            "removeItems": {}
+          }
+        }
+      },
+      "dnd5e": {
+        "spellLists": [
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.FMFQUJPWUyWIPJ8p",
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.Ds6wlEpo252L5PNp",
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.bnMZy8gQH3ydh4sn",
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.Efb8yDFd6KimnpF7",
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.BNsKBIcJCLnXeBJq",
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.etoe7TH2qIeEbkll",
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.JHEodxcCTU1eSfSC",
+          "Compendium.drakkenheim-core.journals.JournalEntry.drakkenheim00000.JournalEntryPage.xckmHuw5YnZNVS0u"
+        ]
+      }
+    }
+  }
